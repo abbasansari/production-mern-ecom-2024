@@ -10,6 +10,11 @@ import cors from "cors";
 import connectDB from "./config/db.js";
 //For Deployment ///////////////////////////////////////////////
 import path from "path";
+import {fileURLToPath} from "url";
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //config env if its not in the root foler than use {path:""}
 dotenv.config();
